@@ -20,7 +20,7 @@ class Login extends PureComponent {
         <br />
         <span>密码:</span><input type="text" />
         <br />
-        <button onClick={handleClick}>登录</button>
+        <button onClick={handleClick}>登  录</button>
     
       </>
     )
