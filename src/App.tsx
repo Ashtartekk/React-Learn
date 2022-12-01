@@ -4,6 +4,7 @@ import './app.css'
 import Class from '../src/components/Class'
 import Home from '../src/views/Home'
 
+
 function App() {
   return(
     <div>

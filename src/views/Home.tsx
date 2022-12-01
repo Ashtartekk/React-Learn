@@ -1,5 +1,6 @@
 import React, { PureComponent } from "react";
 import Hello from '../components/Hello'
+import Login from './Login/login'
 
 class Class extends PureComponent {
 
@@ -8,6 +9,7 @@ class Class extends PureComponent {
       <>
        <div>
        <Hello name={"Hello wrold!"}/>
+       <Login/>
        </div>
       </>
     )
