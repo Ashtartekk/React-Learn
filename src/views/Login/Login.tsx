@@ -13,12 +13,6 @@ const handleClick = ()=>{
 // 使用装饰圈
 @addAge
 class Login extends PureComponent {
-  name?:string
-  age?: number
-  obj?:{
-    name:string,
-    age:number
-  }
   render() {
     return (
         <>
