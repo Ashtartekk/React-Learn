@@ -23,11 +23,25 @@ const handleFlag = ()=>{
 //react如何完成列表渲染
 //技术方案:map 重复渲染的是哪个模板就return谁
 //注意事项:遍历列表时同样需要一个类型为number/string不可重复的key 提高diff性能
+//key仅仅在内部使用，不会出现在真实的dom结构中
 const songs = [
   { id:1,name:'富士山下'},
   { id:2,name:'单车'},
   { id:3,name:'孤勇者'},
 ]
+
+//有一个状态 type 1 2 3 
+//1 -> h1 
+//2 -> h2
+//3 -> h3
+//原则：模板中的逻辑尽量保持精简
+//复杂的多分支的逻辑 收敛为一个函数 通过一个专门的函数来写分支逻辑 模板中只负责调用函数
+
+const getHtag = (type:number)=>{
+  if(type === 1) return <h1>this is h1</h1>
+  if(type === 2) return <h1>this is h2</h1>
+  if(type === 3) return <h1>this is h3</h1>
+}
 
 function App() {
   return(
@@ -38,14 +52,19 @@ function App() {
         <h2>age:{getAge()}</h2>
         <h2>{flag ? 'true' : 'false'}</h2>
         <button onClick={handleFlag}>Flag</button>
+        <div>getHtag:{getHtag(1)}</div>
+        <div>getHtag:{getHtag(2)}</div>
+        <div>getHtag:{getHtag(3)}</div>
         {/* <img src={webpack} alt="" /> */}
         <br />
         <Class/>
         <Home/>
         <div>
-          <ul>
+          { flag ? <ul>
             { songs.map(song=> <li key={song.id}>id:{song.id},name:{song.name}</li>) }
-          </ul>
+            { ! flag && <span>this is span</span> } {/* 短路运算 根据前面条件渲染 */}
+          </ul> : '' }
+          
         </div>
     </div>
   ) 
