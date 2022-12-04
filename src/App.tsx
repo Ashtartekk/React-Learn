@@ -43,6 +43,14 @@ const getHtag = (type:number)=>{
   if(type === 3) return <h1>this is h3</h1>
 }
 
+//jsx样式控制
+//1.行内样式 - 在元素身上绑定一个style属性即可
+//2.类名样式 - 在元素身上绑定一个className即可
+import './app.css'
+const style = {
+  color:'#ccc',fontSize:'17px'
+}
+
 function App() {
   return(
     <div>
@@ -55,6 +63,8 @@ function App() {
         <div>getHtag:{getHtag(1)}</div>
         <div>getHtag:{getHtag(2)}</div>
         <div>getHtag:{getHtag(3)}</div>
+        <span style={{color:'red',fontSize:'17px'}}>this is open</span>
+        <span style={style}>this is close</span>
         {/* <img src={webpack} alt="" /> */}
         <br />
         <Class/>
