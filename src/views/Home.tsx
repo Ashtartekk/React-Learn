@@ -8,7 +8,7 @@ class Class extends PureComponent {
     return (
       <>
        <div>
-       <Hello name={"Hello wrold!"}/>
+       <Hello name={"Hello!"}/>
        <Login/>
        </div>
       </>
