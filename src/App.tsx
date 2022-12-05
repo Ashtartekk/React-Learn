@@ -137,6 +137,8 @@ class CComponent extends React.Component {
 
 import Counter  from './components/State'
 import Input from './components/Input'
+import Father from './components/Father'
+import Children from './components/Children'
 
 function App() {
   return(
@@ -158,6 +160,8 @@ function App() {
         <button onClick={utilFnEvent}>Click Me Event</button>
         Counter: <Counter />
         Input: <Input />
+        Father: <Father />1111111
+        Children: <Children />2222222
         <CComponent />
         <TestComponent />
         <Welcome/>
