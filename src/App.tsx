@@ -113,6 +113,30 @@ const TestComponent = ()=>{
   )
 }
 
+class CComponent extends React.Component {
+  // class Fields
+  clickHandler = (e:any, num:number) => {
+    // 这里的this指向的是正确的当前的组件实例对象 
+    // 可以非常方便的通过this关键词拿到组件实例身上的其他属性或者方法
+    console.log(this)
+  }
+
+  clickHandler1 () {
+    // 这里的this 不指向当前的组件实例对象  undefined 存在this丢失问题
+    console.log(this)
+  }
+  render (){
+    return (
+      <div>
+        <button onClick={e=>this.clickHandler(e,123)}>clickHandler</button>
+        <button onClick={this.clickHandler1}>clickHandler1</button>
+      </div>
+    )
+  }
+}
+
+import Counter  from './components/State'
+
 function App() {
   return(
     <div>
@@ -131,6 +155,8 @@ function App() {
         <br />
         <button onClick={utilFn}>Click Me</button>
         <button onClick={utilFnEvent}>Click Me Event</button>
+        Counter: <Counter />
+        <CComponent />
         <TestComponent />
         <Welcome/>
         <Class/>

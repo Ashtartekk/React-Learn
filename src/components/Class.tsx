@@ -24,7 +24,7 @@ class Class extends PureComponent {
       <h2>Name:{this.name}</h2>
       <h2>Age:{this.age}</h2>
       <div>object.name:{this.obj?.name}</div>
-      <div onClick={handleClick()}>object.age:{this.obj?.age}</div>
+      <div onClick={handleClick}>object.age:{this.obj?.age}</div>
       </>
     )
   }
