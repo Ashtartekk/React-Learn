@@ -51,6 +51,16 @@ const style = {
   color:'#ccc',fontSize:'17px'
 }
 
+import Welcome from './components/Welcome'
+
+function utilFn(){
+  console.log('111')
+}
+
+function utilFnEvent(e){
+  console.log('e=>>',e)
+}
+
 function App() {
   return(
     <div>
@@ -67,6 +77,9 @@ function App() {
         <span style={style}>this is close</span>
         {/* <img src={webpack} alt="" /> */}
         <br />
+        <button onClick={utilFn}>Click Me</button>
+        <button onClick={utilFnEvent}>Click Me Event</button>
+        <Welcome/>
         <Class/>
         <Home/>
         <div>
