@@ -136,6 +136,7 @@ class CComponent extends React.Component {
 }
 
 import Counter  from './components/State'
+import Input from './components/Input'
 
 function App() {
   return(
@@ -156,6 +157,7 @@ function App() {
         <button onClick={utilFn}>Click Me</button>
         <button onClick={utilFnEvent}>Click Me Event</button>
         Counter: <Counter />
+        Input: <Input />
         <CComponent />
         <TestComponent />
         <Welcome/>
