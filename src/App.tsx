@@ -57,8 +57,42 @@ function utilFn(){
   console.log('111')
 }
 
-function utilFnEvent(e){
+function utilFnEvent(e:any){
   console.log('e=>>',e)
+}
+
+const TestComponent = ()=>{
+  const list = [
+    {
+      id:1001,
+      name:'AshtarteKk',
+      age:24
+    },
+    {
+      id:1002,
+      name:'Tom',
+      age:25
+    },
+    {
+      id:1003,
+      name:'Amy',
+      age:26
+    },
+  ]
+  const onDel = (e:any,id:number)=>{
+    console.log(e,id)
+  }
+  return (
+    <ul>
+      {list.map(item =>(
+        <li key={item.id}>
+          myName:{item.name}
+          myAge:{item.age}
+          <button onClick={e=>onDel(e,item.id)}>x</button>
+        </li>
+      ))}
+    </ul>
+  )
 }
 
 function App() {
@@ -79,6 +113,7 @@ function App() {
         <br />
         <button onClick={utilFn}>Click Me</button>
         <button onClick={utilFnEvent}>Click Me Event</button>
+        <TestComponent />
         <Welcome/>
         <Class/>
         <Home/>
