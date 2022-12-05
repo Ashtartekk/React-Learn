@@ -1,3 +1,7 @@
 h2{
     color: #ccc;
 }
+
+.active{
+    color :blue
+}
