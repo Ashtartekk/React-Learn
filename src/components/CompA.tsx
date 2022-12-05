@@ -1,9 +1,13 @@
 import React from 'react'
 
 
-
-class CompA extends React.Component{
-
-
-
+//子组件A
+function CompA(props:any){
+    return(
+        <div>
+            CompA:{props.msg}
+        </div>
+    )
 }
+
+export default CompA

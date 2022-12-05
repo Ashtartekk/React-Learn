@@ -139,6 +139,7 @@ import Counter  from './components/State'
 import Input from './components/Input'
 import Father from './components/Father'
 import Children from './components/Children'
+import CompC from './components/CompC'
 
 function App() {
   return(
@@ -162,6 +163,7 @@ function App() {
         Input: <Input />
         Father: <Father />1111111
         Children: <Children />2222222
+        CompC: <CompC />
         <CComponent />
         <TestComponent />
         <Welcome/>
