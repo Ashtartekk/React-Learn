@@ -62,7 +62,25 @@ function utilFnEvent(e:any){
 }
 
 const TestComponent = ()=>{
-  const list = [
+
+  
+  interface IList  {
+    'module': string;
+    'datas': [
+      {
+        'id': number,
+        'operator': string
+      }
+    ];
+  }
+
+  interface listProps{
+        id:number;
+        name:string;
+        age:number
+   
+  }
+  const list:listProps[] = [
     {
       id:1001,
       name:'AshtarteKk',
