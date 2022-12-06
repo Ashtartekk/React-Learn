@@ -142,6 +142,7 @@ import CompC from "./components/CompC";
 import ZComp from "./components/ZComp";
 import CompE from "./components/CompD";
 import Effect from "./components/Effect";
+import Dept from "./components/Dept";
 
 const state = {
   message: "this is message",
@@ -183,6 +184,7 @@ function App() {
       CompE: <CompE />
       Hook: <Hook />
       Effect: <Effect />
+      Dept: <Dept />
       <CComponent />
       <TestComponent />
       <Welcome />
