@@ -140,6 +140,7 @@ import Father from "./components/Father";
 import Children from "./components/Children";
 import CompC from "./components/CompC";
 import ZComp from "./components/ZComp";
+import CompE from "./components/CompD";
 
 const state = {
   message: "this is message",
@@ -176,6 +177,7 @@ function App() {
       <Provider value={state.message}>
         ZComp: <ZComp />
       </Provider>
+      CompE: <CompE />
       <CComponent />
       <TestComponent />
       <Welcome />
