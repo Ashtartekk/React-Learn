@@ -141,6 +141,7 @@ import Children from "./components/Children";
 import CompC from "./components/CompC";
 import ZComp from "./components/ZComp";
 import CompE from "./components/CompD";
+import Effect from "./components/Effect";
 
 const state = {
   message: "this is message",
@@ -149,6 +150,8 @@ const state = {
 const { Provider, Consumer } = createContext();
 
 const activeFlag = false;
+
+import Hook from "./components/Hook";
 
 function App() {
   return (
@@ -178,6 +181,8 @@ function App() {
         ZComp: <ZComp />
       </Provider>
       CompE: <CompE />
+      Hook: <Hook />
+      Effect: <Effect />
       <CComponent />
       <TestComponent />
       <Welcome />
