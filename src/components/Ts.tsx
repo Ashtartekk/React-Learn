@@ -8,6 +8,19 @@ interface T2 {
 }
 type T3 = T2 & T1; //交叉类型
 
+let a: string | number = 24; //联合类型
+console.log("a-number=>>", a);
+a = "AshtarteKk"; //联合类型
+console.log("a-string=>>", a);
+
+//字符串 字面量类型
+type BtnType = "default" | "primary" | "ghost" | "dashed" | "link" | "text";
+const btn: BtnType = "primary";
+
+//字符串模板类型
+type https = `https://${string}.com`;
+const b: https = `https://www.baidu.com`;
+
 //函数组件
 const Type = () => {
   const info: T3 = {
