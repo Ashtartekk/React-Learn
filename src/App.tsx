@@ -143,6 +143,7 @@ import ZComp from "./components/ZComp";
 import CompE from "./components/CompD";
 import Effect from "./components/Effect";
 import Dept from "./components/Dept";
+import UseRef from "./components/UseRef";
 
 const state = {
   message: "this is message",
@@ -153,6 +154,7 @@ const { Provider, Consumer } = createContext();
 const activeFlag = false;
 
 import Hook from "./components/Hook";
+import Hooks from "./components/Hooks";
 
 function App() {
   return (
@@ -185,6 +187,8 @@ function App() {
       Hook: <Hook />
       Effect: <Effect />
       Dept: <Dept />
+      Hooks: <Hooks />
+      UseRef: <UseRef />
       <CComponent />
       <TestComponent />
       <Welcome />
