@@ -155,6 +155,7 @@ const activeFlag = false;
 
 import Hook from "./components/Hook";
 import Hooks from "./components/Hooks";
+import Ts from "./components/Ts";
 
 function App() {
   return (
@@ -189,6 +190,7 @@ function App() {
       Dept: <Dept />
       Hooks: <Hooks />
       UseRef: <UseRef />
+      Type: <Ts />
       <CComponent />
       <TestComponent />
       <Welcome />
