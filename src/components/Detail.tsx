@@ -5,7 +5,7 @@ class Detail extends React.Component {
     return (
       <div>
         <a href="/home">首页</a>
-        这里是详情页 <button>点我跳转到路由页</button>
+        详情页 <button>点我跳转到路由页</button>
       </div>
     );
   }
