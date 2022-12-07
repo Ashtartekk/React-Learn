@@ -1,10 +1,8 @@
 import React from "react";
-/* 
-    路由有两种模式：
-    一种是HashRouter，带有#，
-    一种是BrowserRouter，不带#，但需要后端支持修改根目录地址
-    开发阶段可以先使用BrowserRouter
-*/
+// 路由有两种模式：
+// 一种是HashRouter，带有#，
+// 一种是BrowserRouter，不带#，但需要后端支持修改根目录地址
+// 开发阶段可以先使用BrowserRouter
 import {
   BrowserRouter as Router,
   Route,
