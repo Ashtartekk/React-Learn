@@ -144,6 +144,8 @@ import CompE from "./components/CompD";
 import Effect from "./components/Effect";
 import Dept from "./components/Dept";
 import UseRef from "./components/UseRef";
+import Memo from "./components/Memo";
+import RouterComp from "./components/RouterComp";
 
 const state = {
   message: "this is message",
@@ -191,6 +193,8 @@ function App() {
       Hooks: <Hooks />
       UseRef: <UseRef />
       Type: <Ts />
+      Memo: <Memo />
+      RouterComp: <RouterComp />
       <CComponent />
       <TestComponent />
       <Welcome />
