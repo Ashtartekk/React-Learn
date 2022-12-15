@@ -23,6 +23,7 @@ const Hook = () => {
   const [count, setCount] = useState(0);
   const [name, setName] = useState("");
   const [list, setList] = useState([1, 2, 3]);
+  const [obj, setobj] = useState({ name: "ash", age: 24 });
   return (
     <>
       <button
@@ -45,6 +46,14 @@ const Hook = () => {
         }}
       >
         {list}
+      </button>
+      <button
+        onClick={() => {
+          setobj({ name: "zhangsan", age: 18 });
+        }}
+      >
+        {obj.name}
+        {obj.age}
       </button>
     </>
   );
